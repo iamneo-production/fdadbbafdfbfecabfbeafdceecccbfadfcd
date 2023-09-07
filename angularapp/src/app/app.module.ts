@@ -1,18 +1,22 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
+import { ConvertPipe } from './convert.pipe';
+import { ConvetComponent } from './convet/convet.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ConvertPipe,
+    ConvetComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
+        ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { }
